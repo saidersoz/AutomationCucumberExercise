@@ -16,8 +16,7 @@ senaryoyu çalıştırabiliriz
         "html:src/test/resources/features/htmlReport/cucumberHooks.html",
         "json:target/json-reports/cucumber.json",
         "junit:src/test/resources/features/htmlReport/cucumber.xml",
-        "rerun:TestOutput/failed_scenario.txt",
-        "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
+        "rerun:TestOutput/failed_scenario.txt"},
         //rerun->fail olan senaryoları belirtilen yoldaki txt dosya içinde gösterir
         //plugin parametresi ile pretty ifadesi kullanılırsa konsolda scenario'lar ile bilgi gösterir
         features = "src/test/resources/features",

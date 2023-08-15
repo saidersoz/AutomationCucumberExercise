@@ -22,7 +22,6 @@ public class ReusableMethods {
     protected static ExtentHtmlReporter extentHtmlReporter;
     protected static ExtentTest extentTest;
 
-
     //HARD WAIT METHOD
     public static void bekle(int saniye) {
         try {
@@ -133,6 +132,7 @@ public class ReusableMethods {
         }
     }
 
+    /*
     //ExtentReport
     public static void extentReport() {
         extentReports = new ExtentReports();
@@ -147,6 +147,8 @@ public class ReusableMethods {
         extentHtmlReporter.config().setDocumentTitle("Extent Report");
         extentHtmlReporter.config().setReportName("Smoke Test Raporu");
     }
+
+*/
 
     //WebTable
     public static void printData(int satir, int sutun) {

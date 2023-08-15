@@ -78,6 +78,10 @@ public class AutomationExcercisePages {
     @FindBy(xpath = "//button[@data-qa='create-account']")
     public WebElement AdressInformationCreateButton;
 
+    //Adress Information State
+    @FindBy(id = "state")
+    public WebElement AdressInformationStateBox;
+
     //Account Created! Text
     @FindBy(xpath = "//*[text()='Account Created!']")
     public WebElement AccountCreatedText;
@@ -97,5 +101,9 @@ public class AutomationExcercisePages {
     //AccountDeleteACCOUNT text
     @FindBy(xpath = "//*[text()='Account Deleted!']")
     public WebElement AccountDeletedText;
+
+    //Looged in as dan önce reklam close
+    @FindBy()
+    public WebElement LoggedInAsTextReklam;
 
 }

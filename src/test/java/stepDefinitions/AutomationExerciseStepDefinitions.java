@@ -83,9 +83,9 @@ public class AutomationExerciseStepDefinitions {
                 Keys.TAB + faker.name().lastName() + Keys.TAB + faker.company().name() + Keys.TAB +
                 faker.address().firstName() + Keys.TAB + faker.address().streetAddress());
         ReusableMethods.bekle(1);
-        ReusableMethods.ddmValue(automationExcercise.AdressInformationCountryBox, "United States" + Keys.TAB +
-                faker.address().cityName() + Keys.TAB + faker.address().city() + Keys.TAB +
-                faker.address().zipCode() + Keys.TAB + faker.number().randomNumber());
+        ReusableMethods.ddmValue(automationExcercise.AdressInformationCountryBox, "United States");
+        automationExcercise.AdressInformationStateBox.sendKeys(faker.address().city() + Keys.TAB
+                + faker.address().cityName() + Keys.TAB + faker.address().zipCode() + Keys.TAB + faker.phoneNumber().phoneNumber());
         ReusableMethods.bekle(2);
     }
 
@@ -109,7 +109,10 @@ public class AutomationExerciseStepDefinitions {
 
     @When("Kullanici Logged in as username yazisinin goruntulendigini test eder")
     public void kullanici_logged_in_as_username_yazisinin_goruntulendigini_test_eder() {
-        Assert.assertTrue(automationExcercise.LoggedInAsText.isDisplayed());
+        String actualResult = automationExcercise.LoggedInAsText.getText();
+        String expectedResult = "Logged in as";
+
+        Assert.assertTrue(actualResult.contains(expectedResult));
         ReusableMethods.bekle(1);
     }
 

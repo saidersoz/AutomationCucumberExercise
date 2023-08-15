@@ -36,6 +36,9 @@
 # 17. 'Hesabı Sil' düğmesini tıklayın
 # 18. 'HESAP SİLİNDİ!' görünür ve 'Devam Et' düğmesini tıklayın
 
+
+
+@AutomationExerciseUS01
 Feature: US01_Register User Test
 
   Scenario: TC01 Kullanici Register Test Eder

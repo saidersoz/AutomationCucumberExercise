@@ -31,6 +31,7 @@ senaryoyu çalıştırabiliriz
         //default false
 )
 /*
+
 features ===> features'ların olduğu packega'ın yolunu ver(ContentRoot)
 glue ====> stepDefinition'ların olduğu packega'ın yolunu ver(Source Root)
 tags ====> çalıştırmak istediğin grubu yaz
@@ -41,6 +42,7 @@ class lombok.javac.apt.LombokProcessor buna bakılıcak
             <version>1.18.24</version>
             <optional>true</optional>
 </dependency>
+
  */
 
 public class TestRunner {

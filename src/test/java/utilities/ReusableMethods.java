@@ -132,12 +132,12 @@ public class ReusableMethods {
         }
     }
 
-    /*
+
     //ExtentReport
     public static void extentReport() {
         extentReports = new ExtentReports();
         String tarih = new SimpleDateFormat("_hh_mm_ss_ddMMyyyy").format(new Date());
-        String dosyaYolu = "TestOutput/reports/extentReport_" + tarih + ".html";
+        String dosyaYolu = "TestOutput/reports_" + tarih + ".html";
         extentHtmlReporter = new ExtentHtmlReporter(dosyaYolu);
         extentReports.attachReporter(extentHtmlReporter);
 
@@ -148,7 +148,7 @@ public class ReusableMethods {
         extentHtmlReporter.config().setReportName("Smoke Test Raporu");
     }
 
-*/
+
 
     //WebTable
     public static void printData(int satir, int sutun) {

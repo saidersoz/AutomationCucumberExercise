@@ -132,7 +132,6 @@ public class ReusableMethods {
         }
     }
 
-
     //ExtentReport
     public static void extentReport() {
         extentReports = new ExtentReports();
@@ -147,8 +146,6 @@ public class ReusableMethods {
         extentHtmlReporter.config().setDocumentTitle("Extent Report");
         extentHtmlReporter.config().setReportName("Smoke Test Raporu");
     }
-
-
 
     //WebTable
     public static void printData(int satir, int sutun) {
